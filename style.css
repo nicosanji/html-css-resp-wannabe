@@ -72,23 +72,95 @@ img {
   clear: both;
 }
 
-/* MEDIAQUERY */
 
-@media screen and (max-width:420px) {
+/*/////////// MEDIAQUERY /////////*/
+
+/*  MAX-WIDTH 768px */
+@media screen and (max-width:768px) {
 
   body {
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .row {
     width: 100%;
   }
 
+  #lezioni .row {
+    background-color: lightskyblue;
+    background-image: linear-gradient(white, lightskyblue);
+    margin-top: 0px;
+  }
 
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  #lezioni img {
+    height: 150px;
+  }
+
+  #steps .row {
+    background-color: white;
+    background-image: linear-gradient(lightskyblue, white);
+    margin-top: 0px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+
+  #steps img {
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  #why .row {
+    background-color: lightskyblue;
+    background-image: linear-gradient(white, lightskyblue);
+    margin-top: 0px;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #why .row img {
+    height: 100px;
+    padding: 25px;
+  }
+
+  h1, h3 {
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+}
+
+/*  MAX-WIDTH 420px */
+@media screen and (max-width:420px) {
+
+  body {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .row {
+    width: 100%;
+  }
 
   #lezioni .row {
     background-color: wheat;
+    background-image: linear-gradient(white, wheat);
     margin-top: 0;
   }
 
@@ -101,17 +173,12 @@ img {
 
   #lezioni img {
     height: 100px;
-    margin-top: 10px;
-  }
-
-  #lezioni h1,
-  #lezioni h3 {
-    margin: 0 auto;
   }
 
   #steps .row {
-    background-color: white;
-    margin-top: 10px;
+    background-color: lightgray;
+    background-image: linear-gradient(wheat, white);
+    margin-top: 0px;
   }
 
   #steps .row>.left,
@@ -126,14 +193,10 @@ img {
     margin-top: 10px;
   }
 
-  #steps h1,
-  #steps h3 {
-    margin: 0 auto;
-  }
-
   #why .row {
     background-color: wheat;
-    margin-top: 10px;
+    background-image: linear-gradient(white, wheat);
+    margin-top: 0px;
   }
 
   #why .row>.first,
@@ -148,7 +211,8 @@ img {
     padding: 20px;
   }
 
-  #why h1,
-  #why h3 {
+  h1, h3 {
+    padding: 10px 0;
     margin: 0 auto;
   }
+}
