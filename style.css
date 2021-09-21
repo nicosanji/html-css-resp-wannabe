@@ -76,6 +76,10 @@ img {
 
 @media screen and (max-width:420px) {
 
+  body {
+    margin: 0;
+  }
+
 .row {
   width: 100%;
 }
@@ -90,6 +94,18 @@ img {
   width: 100%;
   float: none;
 }
+
+#lezioni img {
+  height: 100px;
+  margin-top: 10px;
+}
+
+#lezioni h1,
+#lezioni h3 {
+  margin: 0 auto;
+}
+
+
 
 
 }
